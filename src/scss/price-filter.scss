@@ -1,0 +1,79 @@
+.price {
+	padding: 11px 20px 0 20px;
+	margin-bottom: 40px;
+	.filters__name {
+		margin-bottom: 5px;
+	}
+	&__line {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 55px;
+	}
+	&__input {
+
+		p {
+			color: $color_13;
+			font-size: 10px;
+			line-height: 20px;
+			margin-bottom: 4px;
+		}
+		input {
+			width: 104px;
+			height: 36px;
+			border-radius: 4px;
+			border: 1px solid $color_14;
+			outline: none;
+			text-align: center;
+		}
+	}
+}
+.ui-widget-content {
+	height: 5px;
+	border-radius: 1px;
+	background-color: #eef2f5;
+}
+.ui-widget-header {
+	height: 5px;
+	border-radius: 1px;
+	background: #1d96da;
+}
+.ui-slider .ui-slider-handle {
+	width: 14px;
+	height: 15px;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+	background: $color_1;
+	color: $color_1;
+	border-radius: 50%;
+	border: none;
+	&:hover, &:active, &:focus {
+		background: $color_1;
+		border: none;
+		color: $color_1;
+	}
+	span {
+		position: absolute;
+		top: -33px;
+		left: -100%;
+		padding: 0 10px;
+		height: 24px;
+		background: $color_1;
+		box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1);
+		color: $color_8;
+		font-size: $fz_1;
+		line-height: 24px;
+		&::before {
+			content: '';
+			height: 5px;
+			border: 5px solid transparent;
+			border-top: 5px solid $color_1;
+			position: absolute;
+			bottom: -10px;
+			left: 37%;
+		}
+	}
+}
+.ui-state-disabled:active {
+	background: $color_1;
+	color: $color_1;
+	border: none;
+}

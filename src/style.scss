@@ -1,0 +1,349 @@
+@import "scss/settings";
+section {
+	width: 1400px;
+	height: 800px;
+	background-color: $color_1;
+	padding-top: 40px ;
+}
+.slider {
+	width: 1320px;
+	height: 624px;
+	margin: 0 auto;
+	position: relative;
+	box-shadow: 0 4px 17px rgba(0, 0, 0, 0.6);
+	border-radius: 4px;
+	overflow: hidden;
+}
+.slide {
+	height: 100%;
+	&::before {
+			content: '';
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			position: absolute;
+			background-color: rgba( 0, 0, 0, 0.5);
+			border-radius: 4px;
+			z-index: 1;
+		}
+	&__item {
+		background:  url('./files/imgs/Layer.jpg') no-repeat;
+		background-size: cover;
+		background-position: bottom;
+		z-index: -1;
+		height: 624px;
+		width: 100%;
+		z-index: 0;
+		
+	}
+	.slick-dots {
+		position: absolute;
+		height: 56px;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		border-top: 1px solid #ecf1f5;
+		z-index:5;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			width: 10px;
+			height: 10px;
+			background-color: #ebeff2;
+			border-radius: 50%;
+			button {
+				width: 10px;
+				height: 10px;
+				&::before {
+					width: 10px;
+					height: 10px;
+				}
+			}
+		}
+		li.slick-active {
+			background-color: $color_6;
+		}
+	}
+	.slick-prev, .slick-next {
+		z-index:10;
+		position: absolute;
+		bottom: -28px;
+		top: auto;
+		width: 61px;
+		height: 56px;
+		
+	}
+	.slick-prev {
+		left: 0;
+		border-right: 1px solid #ecf1f5;
+		
+	}
+	.slick-next {
+		right: 0;
+		border-left: 1px solid #ecf1f5;
+	}
+	.slick-prev:before, .slick-next:before {
+		content:'';
+		width: 10px; height: 16px;
+		display: block;
+		margin: 0 auto;
+	}
+	.slick-prev:before {
+		background: url('./files/imgs/sprite.png') -113px -9px;
+	}
+	.slick-next:before {
+		background: url('./files/imgs/sprite.png') -81px -9px;
+	}
+}
+.content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 40px 201px 0 183px;
+	z-index:3;
+	display: flex;
+	
+	&__tags {
+		display: flex;
+		margin-bottom: 80px;
+		.orange-btn {
+			margin-right: 14px;
+		}
+	}
+	&__text {
+		max-width: 400px;
+		padding-bottom: 56px;
+	}
+	&__title {
+		color: $color_1;
+		font-size: $fz_3;
+		font-weight: bold;
+		line-height: 40px;
+		margin-bottom: 14px;
+	}
+	&__description {
+		padding-left: 1px;
+		color: $color_1;
+		font-size: $fz_2;
+		opacity: 0.76;
+		line-height: 24px;
+		max-width: 359px;
+		margin-bottom: 20px;
+	}
+	&__left {
+		max-width: 625px;
+		margin-right: 49px;
+	}
+}
+.tags-btn {
+	height: 26px;
+	line-height: 26px;
+	color: $color_1;
+	border-radius: 13px;
+	font-family: 'Arial';
+	font-size: $fz_1;
+	font-weight: 400;
+	letter-spacing: 0.24px;
+
+}
+.blue-btn {
+	background-color: $color_2;
+	padding: 0 14px 0 15px;
+}
+.orange-btn {
+	background-color: $color_3;
+	padding: 0 16px 0 14px;
+}
+.content-btn {
+	background-color: $color_2;
+	height: 41px;
+	border-radius: 20px;
+	border: 1px solid #0f70a7;
+	width: 168px;
+	padding: 0 18px 0 19px;
+	display: flex;
+	justify-content: space-between;
+	&__text {
+		color: $color_1;
+		font-size: $fz_2;
+		letter-spacing: 0.28px;
+		line-height: 41px;
+	}
+	&__icon {
+		display: block;
+		width: 8px;
+		height: 12px;
+		background: url('./files/imgs/sprite.png') -112px -46px;
+		align-self: center;
+	}
+
+}
+.statistic {
+	display: flex;
+	justify-content: space-between;
+	width: 625px;
+}
+.stats-item {
+	width: 194px;
+	height: 89px;
+	background-color: $color_1;
+	border-radius: 4px;
+	display: flex;
+	padding: 25px 15px 22px 22px;
+	&__icon {
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		margin-right: 13px;
+	}
+	.revenue {
+		background: url('./files/imgs/sprite.png') 3px -94px $color_4;
+
+	}
+	.users {
+		background: url('./files/imgs/sprite.png') 4px -32px $color_6;
+	}
+	.products {
+		background: url('./files/imgs/sprite.png') -33px 2px $color_7;
+	}
+	&__info {
+
+	}
+	&__number {
+		color: $color_8;
+		font-size: $fz_4;
+		line-height: 26.7px;
+
+	}
+	&__text {
+		color: $color_9;
+		font-size: $fz_5;
+		opacity: 0.76;
+		line-height: 17.8px;
+	}
+}
+
+
+.filters {
+	width: 262px;
+	height: 479px;
+	background-color: $color_1;
+	border-radius: 4px;
+	&__head {
+		padding-left: 18px;
+		height: 50px;
+		display: flex;
+		border-bottom: 2px solid $color_16;
+		.filters__name {
+			width: 136px;
+			border-right: 2px solid $color_16;
+			padding-top: 16px;
+			padding-left: 1px;
+		}
+	}
+	&__clear-btn {
+		color: #b4bfc7;
+		font-size: $fz_1;
+		padding: 14px 18px 0 28px;
+		span {
+			display: inline-block;
+			width: 18px;
+			height: 16px;
+			background: url('./files/imgs/sprite.png') -36px -41px;
+		}
+	}
+	&__name {
+		color: $color_8;
+		font-size: $fz_1;
+		line-height: 24px;
+	}
+	&__btn {
+		width: 144px;
+		height: 41px;
+		display: block;
+		background: $color_5;
+		color: $color_1;
+		border-radius: 20px;
+		border: 1px solid $color_17;
+		font-size: $fz_2;
+		letter-spacing: 0.28px;
+		margin: 0 auto;
+		text-align: left;
+		padding: 0 43px;
+		outline: none;
+		cursor: pointer;
+		.icon {
+			width: 11px; height: 8px;
+			background: url('./files/imgs/sprite.png') -10px -80px;
+			display: inline-block;
+			margin-right: 7px;
+		}
+	}
+}
+.brands {
+	padding: 10px 4px 4px 20px;
+	border-bottom: 2px solid $color_16;
+	.filters__name {
+		margin-bottom: 7px;
+	}
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+.brand {
+	border-radius: 15px;
+	min-width: 61px;
+	height: 31px;
+	padding-left: 11px;
+	padding-right: 11px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid $color_14;
+	margin-bottom: 8px;
+	margin-right: 8px;
+	&__name {
+		color: $color_11;
+		font-size: $fz_1;
+		line-height: 31px;
+		padding-right: 10px;
+		user-select: none;
+	}
+	input[type="checkbox"] {
+		display: none;
+	}
+	label{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 10;
+		cursor: pointer;
+	}
+	input[type=checkbox]:checked + &__name {
+		color: $color_12;
+		padding-right: 0;
+	}
+	input[type=checkbox]:checked ~ label {
+		position: relative;
+		display: inline-block;
+		width: 10px;
+		height: 12px;
+		&::before {
+			content: '✖';
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			color: $color_10;
+			font-size: 10px;
+		}
+	}
+}
+@import "scss/price-filter";

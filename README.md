@@ -1,1 +1,1 @@
-# test-slider
+# тестовое задание slider 

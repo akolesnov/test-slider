@@ -1,0 +1,39 @@
+.bg-4_layers {
+		width: 18px; height: 15px;
+		background: url('css_sprites.png') -10px -10px;
+}
+
+.bg-arrow {
+		width: 8px; height: 12px;
+		background: url('css_sprites.png') -112px -46px;
+}
+
+.bg-arrow_right {
+		width: 10px; height: 16px;
+		background: url('css_sprites.png') -82px -10px;
+}
+
+.bg-Arrow_left {
+		width: 10px; height: 16px;
+		background: url('css_sprites.png') -112px -10px;
+}
+
+.bg-Forma_1 {
+		width: 11px; height: 12px;
+		background: url('css_sprites.png') -44px -45px;
+}
+
+.bg-Forma_1_copy_8 {
+		width: 14px; height: 15px;
+		background: url('css_sprites.png') -48px -10px;
+}
+
+.bg-Shape_1_copy {
+		width: 14px; height: 15px;
+		background: url('css_sprites.png') -10px -45px;
+}
+
+.bg-Rectangle_8_copy_4 {
+		width: 11px; height: 8px;
+		background: url('css_sprites.png') -10px -80px;
+}

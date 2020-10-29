@@ -1,0 +1,97 @@
+
+@font-face {
+	font-family: 'Arial';
+	src: url('./files/fonts/ArialMT.eot');
+	src: local('Arial'), local('ArialMT'),
+		url('./files/fonts/ArialMT.eot?#iefix') format('embedded-opentype'),
+		url('./files/fonts/ArialMT.woff') format('woff'),
+		url('./files/fonts/ArialMT.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arial';
+	src: url('./files/fonts/Arial-BoldMT.eot');
+	src: local('Arial Bold'), local('Arial-BoldMT'),
+		url('./files/fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+		url('./files/fonts/Arial-BoldMT.woff') format('woff'),
+		url('./files/fonts/Arial-BoldMT.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/*-------------------------------------------------------------*/
+
+$color_1: #ffffff;
+$color_2: #1d97da;
+$color_3: #db8b25;
+$color_4: #26cf31;
+$color_5: #27cf31;
+$color_6: #1d96da;
+$color_7: #b955cf;
+$color_8: #32394d;
+$color_9: #6d7487;
+$color_10: #b4bfc7;
+$color_11: #7a7c81;
+$color_12: #1c92d3;
+$color_13: #c5c8d1;
+$color_14: #e8ebee;
+$color_15: #eef2f5;
+$color_16: #ecf1f5;
+$color_17: #1aa722;
+$fz_1: 12px;
+$fz_2: 14px;
+$fz_3: 34px;
+$fz_4: 20px;
+$fz_5: 11px;
+$fz_6: 13px;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	font-family: 'Arial';
+}
+
+
+h1, h2, h3, h4, h5, h6{
+	font-size: 1.15rem;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	text-decoration: none;
+	font-family: 'Arial';
+}
+
+p, span, a{
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	line-height: 1;
+	font-family: 'Arial';
+	text-decoration: none;
+	outline: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
